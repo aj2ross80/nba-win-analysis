@@ -6,11 +6,12 @@ Created on Wed Sep 16 15:37:41 2026
 @author: ajross
 """
 
-
-'''
-NBA Team Stats vs Winning — 2010-11 through 2025-26
-Which box score stats actually correlate with winning?
-'''
+# =============================================================================
+  '''
+  NBA Team Stats vs Winning — 2010-11 through 2025-26
+  Which box score stats actually correlate with winning?
+  '''
+# =============================================================================
 
 import time
 import pandas as pd
@@ -111,8 +112,6 @@ for season in SEASONS:
 
 data = pd.concat(all_seasons, ignore_index=True)
 print(f'\nPulled {len(data)} team-seasons.')
-
-
 
 
 
@@ -260,7 +259,9 @@ save_table(matches, 'filter_matches.txt')
 
 
 
-# Correclation Check: 
+
+
+# Correclation Check (not related to Section 6): 
 
 print(data[['PTS', 'OPP_PTS', 'FG_PCT', 'OPP_FG_PCT']].corr())
 
