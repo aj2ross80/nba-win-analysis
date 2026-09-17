@@ -279,13 +279,3 @@ Three more specific results came out of it:
 
 That these held across a league that changed substantially in pace and 3-point volume since 2010 suggests they reflect something fairly fundamental about how basketball games are won, rather than a trend specific to one era.
 
----
-
-## Running it yourself
-
-```bash
-pip install nba_api pandas statsmodels matplotlib adjustText
-python nba_win_analysis.py
-```
-
-`nba_win_analysis.py` pulls all 16 seasons once, then runs each analysis section against that single dataset. Expect a few minutes for the initial pull, since requests are deliberately throttled to avoid rate-limiting.
